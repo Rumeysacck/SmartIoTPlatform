@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/rumeysacicek/SmartIoT.Api/SmartIoT.Api.csproj": {}
+    "/Users/rumeysacicek/Documents/SmartIoTPlatform/SmartIoT.Api/SmartIoT.Api.csproj": {}
   },
   "projects": {
-    "/Users/rumeysacicek/SmartIoT.Api/SmartIoT.Api.csproj": {
+    "/Users/rumeysacicek/Documents/SmartIoTPlatform/SmartIoT.Api/SmartIoT.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/rumeysacicek/SmartIoT.Api/SmartIoT.Api.csproj",
+        "projectUniqueName": "/Users/rumeysacicek/Documents/SmartIoTPlatform/SmartIoT.Api/SmartIoT.Api.csproj",
         "projectName": "SmartIoT.Api",
-        "projectPath": "/Users/rumeysacicek/SmartIoT.Api/SmartIoT.Api.csproj",
+        "projectPath": "/Users/rumeysacicek/Documents/SmartIoTPlatform/SmartIoT.Api/SmartIoT.Api.csproj",
         "packagesPath": "/Users/rumeysacicek/.nuget/packages/",
-        "outputPath": "/Users/rumeysacicek/SmartIoT.Api/obj/",
+        "outputPath": "/Users/rumeysacicek/Documents/SmartIoTPlatform/SmartIoT.Api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/rumeysacicek/.nuget/NuGet/NuGet.Config"

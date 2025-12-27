@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/rumeysacicek/SmartIoT.Telemetry/SmartIoT.Telemetry.csproj": {}
+    "/Users/rumeysacicek/Documents/SmartIoTPlatform/SmartIoT.Telemetry/SmartIoT.Telemetry.csproj": {}
   },
   "projects": {
-    "/Users/rumeysacicek/SmartIoT.Telemetry/SmartIoT.Telemetry.csproj": {
+    "/Users/rumeysacicek/Documents/SmartIoTPlatform/SmartIoT.Telemetry/SmartIoT.Telemetry.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/rumeysacicek/SmartIoT.Telemetry/SmartIoT.Telemetry.csproj",
+        "projectUniqueName": "/Users/rumeysacicek/Documents/SmartIoTPlatform/SmartIoT.Telemetry/SmartIoT.Telemetry.csproj",
         "projectName": "SmartIoT.Telemetry",
-        "projectPath": "/Users/rumeysacicek/SmartIoT.Telemetry/SmartIoT.Telemetry.csproj",
+        "projectPath": "/Users/rumeysacicek/Documents/SmartIoTPlatform/SmartIoT.Telemetry/SmartIoT.Telemetry.csproj",
         "packagesPath": "/Users/rumeysacicek/.nuget/packages/",
-        "outputPath": "/Users/rumeysacicek/SmartIoT.Telemetry/obj/",
+        "outputPath": "/Users/rumeysacicek/Documents/SmartIoTPlatform/SmartIoT.Telemetry/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/rumeysacicek/.nuget/NuGet/NuGet.Config"

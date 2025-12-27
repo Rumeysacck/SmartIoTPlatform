@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SmartIoT.Telemetry")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e711f4d7f17f8ad78de3dd95665611dab0ae2056")]
 [assembly: System.Reflection.AssemblyProductAttribute("SmartIoT.Telemetry")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SmartIoT.Telemetry")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

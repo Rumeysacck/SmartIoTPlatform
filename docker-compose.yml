@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  # 1. MQTT Broker Servisi (Mosquitto)
+  mosquitto:
+    image: eclipse-mosquitto
+    container_name: mosquitto
+    ports:
+      - "1883:1883" # MQTT standart portu
+      - "9001:9001" # WebSocket portu
+    volumes:
+      - ./mosquitto/config:/mosquitto/config
+      - ./mosquitto/data:/mosquitto/data
+
+  # 2. Zaman Serisi Veritabanı (TimescaleDB)
+  timescaledb:
+    image: timescale/timescaledb:latest-pg16
+    container_name: timescaledb
+    environment:
+      POSTGRES_USER: smartuser
+      POSTGRES_PASSWORD: smartpassword
+      POSTGRES_DB: iotdata
+    ports:
+      - "5432:5432" # PostgreSQL standart portu
+    volumes:
+      - timescaledb_data:/var/lib/postgresql/data
+
+volumes:
+  timescaledb_data:
