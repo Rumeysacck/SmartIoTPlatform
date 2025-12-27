@@ -1,12 +1,27 @@
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
+// 1. ADIM: CORS Servisini Kaydet
+// Bu adım, uygulamanın dış kaynaklardan (örneğin React) gelen isteklere nasıl yanıt vereceğini tanımlar.
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(policy =>
+    {
+        policy.AllowAnyOrigin()   // Şimdilik her yerden gelen isteğe izin veriyoruz
+              .AllowAnyHeader()   // Tüm başlıklara izin ver (Content-Type vb.)
+              .AllowAnyMethod();  // Tüm metodlara izin ver (GET, POST, PUT, DELETE)
+    });
+});
+
+// OpenAPI (Swagger) desteği
 builder.Services.AddOpenApi();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// 2. ADIM: CORS Middleware'ini Aktif Et
+// ÖNEMLİ: app.UseCors() mutlaka yönlendirme (routing) ve endpoint tanımlarından önce gelmelidir.
+app.UseCors(); 
+
+// HTTP istek hattını yapılandır
 if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
@@ -21,7 +36,7 @@ var summaries = new[]
 
 app.MapGet("/weatherforecast", () =>
 {
-    var forecast =  Enumerable.Range(1, 5).Select(index =>
+    var forecast = Enumerable.Range(1, 5).Select(index =>
         new WeatherForecast
         (
             DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
